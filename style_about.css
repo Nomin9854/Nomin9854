@@ -1,0 +1,113 @@
+
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            background: url('wp1.jpg');
+            background-size: cover;
+        }
+
+        h1 {
+            color: #eddede;
+        }
+        .shapes-container {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .shape {
+            width: 450px;
+            height: 500px;
+            border-radius: 100%;
+            background: #d6d3d3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin: 0,10px;
+        }
+
+        .shape h2 {
+            margin-bottom: 10px;
+        }
+
+        .shape:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 100px;
+            color: #ebdddd;
+        }
+        #back-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        #back-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            position: absolute;
+            top: 670px;
+            left: 10px;
+            border-radius: 10px; 
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        #back-button:hover {
+            background-color: #555; 
+        }
+       
+        .cv-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            position: absolute;
+            top: 670px;
+            left: 100px;
+            border-radius: 10px; 
+            transition: background-color 0.3s ease-in-out;
+        }
+        .cv-button:hover {
+           background-color: #555;
+        }
+        @media only screen and (min-width: 768px) {
+            .project-card {
+                width: 31%; 
+            }
+        }
+
+        

@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style_about.css">
+</head>
+<body>
+
+    <h1>About Me...</h1>
+
+    <div class="shapes-container">
+        <div class="shape" onclick="showCategory('I am...', 'Multimedia Enthusiast')">
+            <h2>I am...</h2>
+            <p><b>Hello, I'm Nomin! I am a multimedia enthusiast with a passion for creating engaging and visually stunning content. 
+                Whether it's graphic design, video editing, or web development, I love bringing ideas to life through various forms of media.</b></p>
+        </div>
+        <div class="shape" onclick="showCategory('Background...', 'Degree in Multimedia Arts')">
+            <h2>Background...</h2>
+            <p><b>Bsc in IT - Rajarata University of Sri Lanka <br> Graphic Design and Media (Hons) - Unviersity of South Wales Cardiff, Wales, UK</b> </p>
+        </div>
+        <div class="shape" onclick="showCategory('Career...', 'Pushing Boundaries in Multimedia')">
+            <h2>Career...</h2>
+            <p><b>I have 3 years of experience as a web and graphic designer in a professional setting, and I have been working as a freelancer on Fiverr for 2 years.</b></p>
+        </div>
+    </div>
+
+    <button id="back-button" onclick="goBack()">Back</button>
+
+    <footer>
+        &copy; 2024 Nomin's Multimedia Portfolio
+    </footer>
+
+    <script>
+        function showCategory(category, details) {
+            var content = `<h2>${category}</h2><p>${details}</p>`;
+            document.getElementById('category-content').innerHTML = content;
+        }
+    </script>
+    <script>
+        function showCategory(category, details) {
+            var content = `<h2>${category}</h2><p>${details}</p>`;
+            document.getElementById('category-content').innerHTML = content;
+        }
+
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+    </script>
+    <button  class="cv-button" onclick="openCV()">View CV</button>
+
+<script>
+    function openCV() {
+        window.open("others/cv.pdf", '_blank');
+    }
+</script>
+
+</body>
+</html>

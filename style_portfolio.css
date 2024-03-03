@@ -1,0 +1,163 @@
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #a09e9e;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            background: url('wp2.jpg');
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            background: #c0bdbd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .project-card h2 {
+            color: #333;
+        }
+
+        .project-card p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .project-card a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+        .project-card img {
+            width: 100%; 
+            height: auto;
+            max-width: 100%; 
+            border-radius: 8px;
+             margin-bottom: 10px;
+}
+
+.animation-box {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 150px; 
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .animation-images {
+            display: flex;
+            width: 400%; 
+            animation:  scrollAnimation 10s ease-in-out infinite;;
+        }
+
+        .animation-images img {
+            width: 25%; 
+            height: 400%;
+            object-fit: cover;
+        }
+
+        @keyframes scrollAnimation {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%); 
+            }
+        }
+        
+        #back-button:hover {
+            background-color: #555; 
+        }
+        
+       .project-card.video-card {
+           display: flex;
+           flex-direction: column;
+        }
+
+       .project-card video {
+           width: 100%;
+           height: auto;
+           border-radius: 8px 8px 0 0; 
+       }
+
+      .project-card .project-content {
+         padding: 15px;
+      }
+
+     .project-card h2 {
+        color: #333;
+     }
+
+     .project-card p {
+       line-height: 1.6;
+       margin-bottom: 10px;
+    }
+
+    .project-card a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+   }
+
+   .project-card a:hover {
+      text-decoration: underline;
+   }
+    #back-button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      position: absolute;
+      top: 720px;
+      left: 20px;
+      border-radius: 10px; 
+      transition: background-color 0.3s ease-in-out;
+  }
+
+  footer {
+      margin-top: 80px;
+      color: #ebdddd;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-card {
+        width: 31%; 
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .project-card {
+        width: 23%; 
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .project-card {
+        width: 18%; 
+    }
+}
